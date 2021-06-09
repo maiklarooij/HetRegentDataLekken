@@ -1,0 +1,21 @@
+body {
+    background-image: url(achtergrond.jpg);
+    background-size: cover;
+
+}
+
+.container {
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 6em;
+    text-align: center;
+    box-shadow: 2px 2px 5px;
+    border-radius: 5px;
+}
+
+.screens {
+    padding: 10px;
+}

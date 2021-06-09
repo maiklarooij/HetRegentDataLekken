@@ -1,0 +1,50 @@
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="Static/styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+    <title>Is het internet lek?</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id='screen1' class="screens">
+            <h1>Welkom!</h1>
+            <p>Steeds vaker worden we opgeschrikt door datalekken blah blah</p>
+            <button id='knop1' class="btn btn-dark">Start!</button>
+        </div>
+        <div id='screen2' style='display:none;' class="screens">
+            <h1>Stelling 1</h1>
+            <p>boe ba bie</p>
+            <button id='knop2' class="btn btn-dark">Knop</button>
+        </div>
+        <div id='screen3' style='display:none;' class="screens">
+            <h1>Stelling 2</h1>
+            <p>blah blah</p>
+            <button id='knop3' class="btn btn-dark">Knop</button>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.getElementById("knop1").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen1'), document.getElementById('screen2'));
+    });
+
+    document.getElementById("knop2").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen2'), document.getElementById('screen3'));
+    });
+
+    function nextScreen(scherm1, scherm2) {
+        $(scherm1).fadeOut(1000);
+        setTimeout(function(){
+            $(scherm2).fadeIn(1000);
+        }, 1000);
+    }
+    
+</script>
