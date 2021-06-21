@@ -6,14 +6,12 @@ body {
 
 .container {
     background-color: white;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    padding: 6em;
     text-align: center;
     box-shadow: 2px 2px 5px;
     border-radius: 5px;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    padding: 20px;
 }
 
 .screens {

@@ -14,16 +14,48 @@
 <body>
     <div class="container">
         <div id='screen1' class="screens">
-            <h1>Welkom!</h1>
-            <p>Steeds vaker worden we opgeschrikt door datalekken blah blah</p>
-            <button id='knop1' class="btn btn-dark">Start!</button>
+            <h1>STELLING!</h1>
+            <p>Datalekken zijn vaak in het nieuws. Het idee dat je gegevens zijn gestolen klinkt natuurlijk vervelend, maar zou je ook kunnen vertellen wat hackers en criminelen met de data doen?</p>
+            <div class='row'>
+                <button id='stelling1.1' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Ja, dat weet ik precies!</button>
+                <button id='stelling1.2' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Nee, eigenlijk niet!</button>
+            </div>
+            
         </div>
         <div id='screen2' style='display:none;' class="screens">
-            <h1>Stelling 1</h1>
-            <p>boe ba bie</p>
-            <button id='knop2' class="btn btn-dark">Knop</button>
+            <h1>Verspreiding en gebruik van de gelekte gegevens</h1>
+            <p>Voor veel mensen is het onbekend terrein, maar er bestaan markplaatsen waarop gegevens uit een groot aantal datalekken worden aangeboden. Voor maar een paar euro heb je de gegevens van miljoenen mensen in handen. RaidForums is zo’n plek. Op de site worden gegevens van grote namen als Facebook, LinkedIn en Twitter verkocht. In de woorden van de website bestaat het forum uit ‘database dumps’. Dat betekent dat de databases gevuld met soms erg persoonlijke informatie voor een klein prijsje worden gedumpt. Vaak zijn het databases die eerder al voor iedereen toegankelijk waren, of kleine hackers die proberen naam te maken in deze wereld. Gegevens van het GGD-lek zijn niet op hackers-fora te vinden. Hoe zijn de gegevens dan wel verspreid? En waarom zijn hackers eigenlijk geïnteresseerd in persoonlijke gegevens?</p>
+            <figure>
+                <img src='static/raidforum.PNG'>
+                <figcaption style="font-size: 13px">Data van ruim 500 miljoen Facebookgebruikers worden voor een paar euro aangeboden op RaidForums.</figcaption>
+            </figure>
+            <p>De GGD-medewerkers boden de data uit de systemen aan via de chatdienst Telegram. Uit later onderzoek door techjournalist Daniël van der Laan (RTL Nieuws, 2021) blijkt dat al maandenlang gegevens uit de GGD-systemen werden aangeboden door meerdere accounts. Ook andere kanalen worden hiervoor gebruikt, zoals Snapchat. Voor een bedrag tussen de 30 en 50 euro ontvang je van iemand het woon- en mailadres en telefoon- en Burgerservicenummer. De data wordt ook op grotere schaal verkocht; voor duizenden euro’s kunnen de gegevens van tienduizenden Nederlanders worden gekocht. Een hoge prijs, maar dat komt vooral omdat er Burgerservicenummers zijn buitgemaakt. Handelaren verdienen veel geld met het verkopen van de data. Betalingen gaan vaak anoniem via Bitcoin of Paysafecard. Als de gegevens eenmaal in verkeerde handen zijn, is het ontzettend moeilijk om de personen op te sporen. Voor een gemiddelde Nederlander zijn de gegevens niet zomaar te verkrijgen. Vaak zijn er contacten nodig binnen hackersgroepen. Op die manier kun je worden toegevoegd aan groepen op bijvoorbeeld Telegram. De gegevens van de Nederlanders liggen dus niet letterlijk op straat, maar zijn waarschijnlijk wel in handen van een aantal hackers. Wat kunnen die hackers daarmee?</p>
+            <div class ='row'>
+                <div class='col-8'>
+                    <p>De gegevens worden door criminelen vaak gebruikt voor oplichting. Criminelen kunnen bellen of mailen naar een slachtoffer. Vaak doen de criminelen zich voor als een geloofwaardige instantie. Omdat de criminelen veel privégegevens kunnen noemen, is het makkelijk om in het verhaal te trappen. Vervolgens wordt het slachtoffer verleid om betalingen te doen of meer gevoelige gegevens zoals wachtwoorden of pincodes te geven. Een tegenwoordig veelvoorkomende vorm van oplichting gaat via WhatsApp. Criminelen kunnen door de buitgemaakte gegevens zich voordoen als bekende van het slachtoffer. Onder het mom van een ‘nieuw nummer’ winnen ze het vertrouwen van de slachtoffers, waarna er vaak een betaallink wordt gestuurd omdat het familielid ‘even snel geld nodig heeft’. Een andere vorm van criminaliteit waar de GGD voor waarschuwt is identiteitsfraude. De persoonsgegevens kunnen worden gebruikt om producten of diensten op het naam van de slachtoffer te kopen. Gegevens kunnen ook worden gebruikt om creditcards aan te vragen of bankrekeningen te kopen, hoewel hier meestal een identiteitsbewijs voor nodig is. Een BSN is dan simpelweg niet genoeg.</p>
+                    <p>Slachtoffers van het lek kunnen het beste extra oplettend zijn de aankomende tijd. Ga niet zomaar in op telefoontjes of mailtjes van bijvoorbeeld de bank. Kijk naar de afzender en bel bij twijfel altijd even naar de bank.</p>
+                </div>
+                <div class='col-4'>
+                    <figure>
+                        <img src='static/whatsapp.jpg' width='250px'>
+                        <figcaption style="font-size: 13px">Oplichters doen zich voor als een familielid op WhatsApp en vragen vervolgens om geld.</figcaption>
+                    </figure>
+                    
+                </div>
+                
+            </div>
+            <button id='knop2' class="btn btn-dark btn-lg">Ga verder</button>
         </div>
         <div id='screen3' style='display:none;' class="screens">
+            <h1>STELLING!</h1>
+            <p>Het kopen van gelekte gegevens is pas een misdaad als er daadwerkelijk wat mee gedaan wordt (oplichting, fraude etc.).</p>
+            <div class='row'>
+                <button id='stelling2.1' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Eens! Zolang de gegevens niet gebruikt worden schaadt het niemand.</button>
+                <button id='stelling2.2' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Oneens! Ook de verspreiding van de gegevens is al een misdaad!</button>
+            </div>
+            
+        </div>
+        <div id='screen4' style='display:none;' class="screens">
             <h1>Stelling 2</h1>
             <p>blah blah</p>
             <button id='knop3' class="btn btn-dark">Knop</button>
@@ -32,7 +64,10 @@
 </body>
 
 <script>
-    document.getElementById("knop1").addEventListener("click", function (){
+    document.getElementById("stelling1.1").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen1'), document.getElementById('screen2'));
+    });
+    document.getElementById("stelling1.2").addEventListener("click", function (){
         nextScreen(document.getElementById('screen1'), document.getElementById('screen2'));
     });
 
