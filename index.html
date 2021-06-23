@@ -6,23 +6,69 @@
     <link href="Static/styles.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/jpg" href="Static/favicon.png"/>
 
-
-    <title>Is het internet lek?</title>
+    <title>Het Regent Datalekken!</title>
 </head>
 
 <body>
     <div class="container">
-        <div id='screen1' class="screens">
-            <h1>STELLING!</h1>
-            <p>Datalekken zijn vaak in het nieuws. Het idee dat je gegevens zijn gestolen klinkt natuurlijk vervelend, maar zou je ook kunnen vertellen wat hackers en criminelen met de data doen?</p>
+    
+        <div id='home' class="screens">
+            <h1>Het Regent Datalekken!</h1>
             <div class='row'>
-                <button id='stelling1.1' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Ja, dat weet ik precies!</button>
+                <div class='col-8'>
+                    <p>Eind januari werd bekend dat persoonlijke gegevens van miljoenen Nederlanders mogelijk in criminele handen terecht zijn gekomen door een datalek bij de GGD. Het gaat om informatie uit twee verschillende computersystemen van de GGD. Uit het CoronIT systeem, dat wordt gebruikt om coronatests te registreren, en het HPZone Lite systeem dat wordt gebruikt voor het contactonderzoek, werden gegevens gestolen van personen die bij de GGD een corona test of -vaccinatie hebben gepland of gehad. RTL nieuws ontdekte begin dit jaar het datalek en startte hiermee een grote hoeveelheid media aandacht voor het incident. We hebben deze casus gekozen door de relevantie, uiteraard door het GGD en corona element waar we allemaal mee te maken hebben, maar vooral ook door het onderwerp datalekken wat een probleem is dat in de digitale cultuur steeds vaker voorkomt en dat ons allemaal kan treffen of misschien zelfs al getroffen heeft, vaak zonder dat we er bewust van zijn. We beantwoorden de belangrijkste vragen die naar onze mening vaak niet of niet goed beantwoord worden bij deze incidenten:
+                        Hoe vind een datalek plaats en om welke gegevens gaat het? Wat gebeurd er precies met de gelekte data? Wie is of zijn er verantwoordelijk? Hoe kunnen lekken in de toekomst voorkomen worden? En wat is de maatschappelijke impact van zo’n datalek?</p>
+                </div>
+                <div class='col-4'>
+                    <figure>
+                        <img src='Static/nieuwdatalek.PNG' width='270px'>
+                        <figcaption>Begin dit jaar plaagde dit nieuwsbericht het nieuws.</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <p>Om mensen bewust te maken van de antwoorden op deze vragen verwerken we de antwoorden in een interactieve website. Met stellingen en vragen zetten we aan tot denken over bepaalde punten rondom dit onderwerp, vervolgens worden de stellingen en vragen opgehelderd, onderbouwd met bronnen.</p>
+            <button id='startknop' style='margin-top: 15px;' class="btn btn-dark btn-lg">Start de tour!</button>
+        </div>
+
+        <div id='screen1' style='display:none;' class="screens">
+            <h1>STELLING!</h1>
+            <p class='stelling'>Ik ben wel eens bezorgd over datalekken.</p>
+            <div class='row'>
+                <button id='stelling1.1' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Ja, dat ben ik wel eens...</button>
                 <button id='stelling1.2' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Nee, eigenlijk niet!</button>
             </div>
-            
         </div>
+
         <div id='screen2' style='display:none;' class="screens">
+            <h1>Oorzaak van het datalek</h1>
+            <div class='row'>
+                <div class='col-8'>
+                    <p>Beveiligingsexperts roepen al jaren dat de mens zelf de zwakke schakel is op het gebied van privacybescherming. Dat blijkt nu ook weer het geval. Het datalek heeft namelijk simpelweg kunnen plaatsvinden doordat meerdere medewerkers van het landelijke nummer voor coronatest-afspraken, de data tegen betaling heeft aangeboden aan criminelen. Het gaat dus niet eens om een cyber aanval of hack waardoor de gegevens in de verkeerde handen zijn gevallen, maar medewerkers die werden vertrouwd bij gebruik van de diensten van de GGD hebben data verkocht. Het gaat hier dan om persoonsgegevens zoals adressen, telefoonnummers en Burgerservicenummers van Nederlands. Deze zijn afkomstig uit de it-systemen die door de GGD worden gebruikt. Deze gegevens zijn voor criminelen zeer waardevol, dus zij hebben veel geld over voor dit soort persoonlijke gegevens. Het systeem waaruit de persoonsgegevens zijn gelekt is genaamd CoronIT, dit is het administratiesysteem voor het test- en vaccinatieproces en de communicatie hierover. Van iedereen die een afspraak maakt voor een coronatest via het callcenter, de coronatestsite of via de huisarts komen de persoonsgegevens in dit systeem. De medewerkers van het landelijke nummer voor coronatest-afspraken konden logischerwijs gebruik maken van dit systeem, waardoor zij de mogelijkheid hebben gehad om de persoonsgegevens illegaal te verhandelen.</p>
+                </div>
+                <div class='col-4'>
+                    <figure>
+                        <img src='static/coronit.jpeg' width='400px'>
+                        <figcaption style="font-size: 13px">Zo ziet het 'CoronIT' systeem eruit.</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <p>In de video hieronder legt een oud-medewerker van de GGD uit hoe makkelijk hij nog steeds in de systemen kan komen. Na 2 opleidingsdagen stopte de man al met werken voor de GGD, maar een maand later kan hij nog steeds makkelijk de systemen doorzoeken. Het toont aan dat de beveiliging van de systemen niet goed is.</p>
+            <iframe width="820" height="500" src="https://www.youtube.com/embed/WsBMc_gz7Iw"></iframe><br>
+            <button id='knop1' style='margin-top: 15px;' class="btn btn-dark btn-lg">Ga verder</button>
+        </div>
+
+        <div id='screen3' style='display:none;' class="screens">
+            <h1>STELLING!</h1>
+            <p class='stelling' >Datalekken zijn vaak in het nieuws. Het idee dat je gegevens zijn gestolen klinkt natuurlijk vervelend, maar zou je ook kunnen vertellen wat hackers en criminelen met de data doen?</p>
+            <div class='row'>
+                <button id='stelling2.1' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Ja, dat weet ik precies!</button>
+                <button id='stelling2.2' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Nee, eigenlijk niet!</button>
+            </div>
+        </div>
+
+        <div id='screen4' style='display:none;' class="screens">
             <h1>Verspreiding en gebruik van de gelekte gegevens</h1>
             <p>Voor veel mensen is het onbekend terrein, maar er bestaan markplaatsen waarop gegevens uit een groot aantal datalekken worden aangeboden. Voor maar een paar euro heb je de gegevens van miljoenen mensen in handen. RaidForums is zo’n plek. Op de site worden gegevens van grote namen als Facebook, LinkedIn en Twitter verkocht. In de woorden van de website bestaat het forum uit ‘database dumps’. Dat betekent dat de databases gevuld met soms erg persoonlijke informatie voor een klein prijsje worden gedumpt. Vaak zijn het databases die eerder al voor iedereen toegankelijk waren, of kleine hackers die proberen naam te maken in deze wereld. Gegevens van het GGD-lek zijn niet op hackers-fora te vinden. Hoe zijn de gegevens dan wel verspreid? En waarom zijn hackers eigenlijk geïnteresseerd in persoonlijke gegevens?</p>
             <figure>
@@ -40,30 +86,104 @@
                         <img src='static/whatsapp.jpg' width='250px'>
                         <figcaption style="font-size: 13px">Oplichters doen zich voor als een familielid op WhatsApp en vragen vervolgens om geld.</figcaption>
                     </figure>
-                    
                 </div>
-                
             </div>
             <button id='knop2' class="btn btn-dark btn-lg">Ga verder</button>
         </div>
-        <div id='screen3' style='display:none;' class="screens">
+
+        <div id='screen5' style='display:none;' class="screens">
             <h1>STELLING!</h1>
-            <p>Het kopen van gelekte gegevens is pas een misdaad als er daadwerkelijk wat mee gedaan wordt (oplichting, fraude etc.).</p>
+            <p class='stelling'>Het kopen van gelekte gegevens is pas een misdaad als er daadwerkelijk wat mee gedaan wordt (oplichting, fraude etc.).</p>
             <div class='row'>
-                <button id='stelling2.1' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Eens! Zolang de gegevens niet gebruikt worden schaadt het niemand.</button>
-                <button id='stelling2.2' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Oneens! Ook de verspreiding van de gegevens is al een misdaad!</button>
+                <button id='stelling3.1' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Eens! Zolang de gegevens niet gebruikt worden schaadt het niemand.</button>
+                <button id='stelling3.2' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Oneens! Ook de verspreiding van de gegevens is al een misdaad!</button>
             </div>
             
         </div>
-        <div id='screen4' style='display:none;' class="screens">
-            <h1>Stelling 2</h1>
-            <p>blah blah</p>
-            <button id='knop3' class="btn btn-dark">Knop</button>
+
+        <div id='screen6' style='display:none;' class="screens">
+            <h1>STELLING!</h1>
+            <p class='stelling'>Wie heeft er bij het GGD datalek de meeste schuld volgens jou?</p>
+            <div class='row'>
+                <button id='stelling4.1' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">De GGD zelf</button>
+                <button id='stelling4.2' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">De medewerkers die gegevens verkochten</button>
+            </div>
+            <div class='row'>
+                <button id='stelling4.3' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Het Ministerie van Volksgezondheid</button>
+                <button id='stelling4.4' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Toezichthouder AP (Autoriteit Persoonsgegevens)</button>
+            </div>
+        </div>
+
+        <div id='screen7' style='display:none;' class="screens">
+            <h1>Wie is verantwoordelijk voor het lek?</h1>
+            <p>Dat is nog niet zo'n makkelijke vraag. De verantwoordelijkheid ligt voor verschillende facetten van het verloop van de test- en vaccinatiewerkzaamheden bij verschillende overheidsorganisaties. Het ministerie van Volksgezondheid, Welzijn en Sport (VWS) is verantwoordelijk voor het voorbereiden van het test- en vaccinatiebeleid. Waar de Gemeentelijke Gezondheidsdiensten (GGD’en) verantwoordelijk zijn voor het uitvoeren van de werkzaamheden, houdt de Inspectie Gezondheidszorg en Jeugd (IGJ) toezicht op de kwaliteit van de geleverde zorg. De Autoriteit Persoonsgegevens (AP) is er verantwoordelijk voor dat de richtlijnen van de Algemene Verordening Gegevensbescherming (AVG) worden nageleefd.  
+                Binnen het VWS bepaald minister De Jonge het beleid en is hij hier politiek ook verantwoordelijk voor, binnen het ministerie bestaat ook de Directie Informatiebeleid (DI). Deze stafdirectie die onder de plaatsvervangend secretaris-generaal van VWS ressorteert stelt kaders op voor informatie en ICT en activiteiten en toetst deze.</p>
+            <p>      
+                Bij het verloop van de testactiviteiten zijn twee dingen fout gegaan. Ten eerste hadden werknemers toegang tot te veel informatie waardoor het mogelijk was grote hoeveelheden data te lekken, tweede was de VOG-registratie niet op orde waardoor medewerkers zonder VOG aan de slag konden met gevoelige gegevens. Het DI is in beginsel verantwoordelijk voor het toetsen van de informatiesystemen en heeft de fouten dus over het hoofd moeten hebben gezien. De IGJ had in kunnen grijpen bij het ontbreken van VOG-verklaringen aangezien deze de kwaliteit van de geleverde zorg onder druk zou kunnen zetten. Eveneens had de AP in kunnen grijpen toen het duidelijk werd dat medewerkers bij te veel persoonsgegevens konden. Echter, heeft niemand iets gedaan, en dat terwijl de gebreken van het systeem al maanden bekend waren zo blijkt uit onderzoek van RTL (feb 2021).  
+            </p>
+            <div class='row align-items-center'>
+                <div class='col'>
+                    <img src='Static/hugo.jpg' width='300px'>
+                </div>
+                <div class='col'>
+                    <img src='Static/ap.jpg' width='300px'>
+                </div>
+                <div class='col'>
+                    <img src='Static/igj.png' width='300px'>
+                </div>
+                <div class='col'>
+                    <img src='Static/ggd.png' width='300px'>
+                </div>
+            </div>
+            <button id='knop3' style='margin-top: 15px;' class="btn btn-dark btn-lg">Ga verder</button>
+        </div>
+
+        <div id='screen8' style='display:none;' class="screens">
+            <h1>STELLING!</h1>
+            <p class='stelling'>Er moet een Ministerie van Digitale Zaken die bijvoorbeeld verantwoordelijk kan worden gesteld voor datalekken bij de overheid.</p>
+            <div class='row'>
+                <button id='stelling5.1' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Eens! Digitalisatie is ontzettend belangrijk in deze tijd, daar moet een ministerie voor komen!</button>
+                <button id='stelling5.2' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Oneens! Dat is niet nodig, het moet gewoon beter geregeld binnen de GGD.</button>
+            </div>
+        </div>
+
+        <div id='screen9' style='display:none;' class="screens">
+            <h1>Hoe kunnen datalekken voorkomen worden?</h1>
+            <p>Zoals eerder genoemd zijn er meerdere verschillende manieren waarop een datalek kan plaatsvinden, de meest voorkomende daarvan is een fout of zwakte in de beveiligingssystemen en -maatregelen waardoor hackers bij data kunnen komen waar ze niet bij mogen komen. Dit wordt met name veroorzaakt door het feit dat deze manier van beveiliging weinig proactief is en over het algemeen gebruik maakt van, van tevoren gedefinieerde regels voor eventuele acties die ondernomen moeten worden (Alneyadi, Sithirasenan & Muthukkumarasamy, 2016). Een eventuele oplossing hiervoor zijn de ‘data leak prevention systems’ (DLPSs) als besproken door Chawan & Jadhav (2019). Dit zijn systemen die aan de hand van de context en inhoud van de data een passende manier zoeken om lekken te voorkomen. Dit soort systemen zouden ervoor zorgen dat de eventuele zwakke punten bekend zijn bij het bedrijf zodat deze extra beschermd kunnen worden.            </p>
+            <p>In het geval van de GGD heeft het lek echter op een andere manier plaatsgevonden, dit vereist dus ook een andere oplossing. Bij dit lek gaat het eerder om een ontwerpfout die het voor de werknemers erg makkelijk maakte om gevoelige data te downloaden en daarna eventueel te delen met wie ze willen. Deze werknemers hebben zich vervolgens laten omkopen door hackers om de data, die onder andere medische gegevens en het BSN van patiënten bevatte, te delen (RTL-Nieuws, 2021). Oplossingen voor datalekken van deze soort kunnen op twee manieren bekeken worden: het systeem moet veranderen of de werknemers moeten veranderen. De meest betrouwbare en realistische van deze twee zal zijn om het systeem te veranderen, in grote organisaties als de GGD zijn er namelijk constant nieuwe werknemers en van werknemers die bijvoorbeeld een soort training (bijvoorbeeld over hoe ze moeten omgaan met mensen die hen proberen om te kopen) hebben gehad is het niet gegarandeerd dat ze zich hier ook daadwerkelijk aan houden. Een verandering aan het systeem zou kunnen bestaan uit het veranderen van manier waarop werknemers bij de data kunnen met daarbij een betere beveiliging voor het exporteren van de data (waardoor bijvoorbeeld alleen hoogstaande werknemers met een persoonlijke code dit kunnen).</p>
+            <p>Gezien de relatief simplistische aard van deze oplossing (en daarbij ook de oorzaak van het probleem), zou het een goed idee kunnen zijn om te kijken of bedrijven als de GGD wel genoeg doen om de data van hun gebruikers/patiënten te beschermen. In dit geval zou gesteld kunnen worden dat het de werknemers waren die het uiteindelijke veroorzaakte, echter maakte de GGD het erg makkelijk voor hen om gevoelige data te delen met derden en is het de verantwoordelijkheid van de organisatie in zijn geheel om deze data te beschermen. In dit geval heeft de GGD dus te veel vertrouwen in haar werknemers gehad om moreel juist om te gaan met een systeem dat relatief makkelijk te exploiteren is voor grote geldbedragen. Echter zullen werknemers met slechte intenties hoogstwaarschijnlijk altijd een manier vinden om waardevolle data te verspreiden (bijvoorbeeld door foto’s hiervan te maken). Ook nadat het systeem is aangepast en ze eventueel een training hebben gehad, draait het nog steeds voornamelijk om vertrouwen; de werknemers moeten nou eenmaal bij de data kunnen om hun werk uit te voeren.</p>
+            <button id='knop4' style='margin-top: 15px;' class="btn btn-dark btn-lg">Ga verder</button>
+        </div>
+
+        <div id='screen10' style='display:none;' class="screens">
+            <h1>Wat is de maatschappelijke impact?</h1>
+            <p>Wat zijn nu eigenlijk de maatschappelijke gevolgen van zo’n datalek. Er zijn verschillende gevolgen denkbaar, maar de belangrijkste is het verlies van vertrouwen. De effecten van dit verlies hebben op verschillende dingen invloed. In dit deel gaan we enkele van deze negatieve effecten behandelen vanuit zowel het perspectief van de GGD als die van burger.</p>
+            <p>Waarom verliezen mensen het vertrouwen op het moment dat er bij een grote instantie gegevens lekken? Er zijn hiervoor verschillende reden te noemen. Burgers vinden hun eigen privacy belangrijk, en dit bewustzijn van privacy is ook steeds sterker aan het worden (Anant et al., 2021). Op het moment dat burgers een instantie hun gegevens toevertrouwen, dan verwachten ze dat deze instantie hier netje mee omgaat. Op het moment dat er van deze instantie toch gegevens op straat belanden, dat is het vertrouwen in deze instantie afgenomen. In het geval van de GGD is het toevertrouwen van data nog veel belangrijker. Ten eerste is de GGD een overheidsinstantie, wat bij veel burgers altijd hoge verwachtingen wekt, de overheid moet zijn zaken wel op orde hebben is de verwachting (Pérez-Morote et al., 2020). Ten tweede bewaart de GGD ook hele persoonlijke medische gegevens.Toch is het afgelopen jaar misgegaan bij de GGD en dus is het vertrouwen in de digitale capaciteiten van de overheid en vooral de GGD afgenomen. Wat zijn hiervan de gevolgen?</p>
+            <p>In het geval van de GGD heeft het afgenomen vertrouwen er wellicht toe geleid dat mensen de organisatie omzeilen. In de corona pandemie waar de GGD een essentiële rol in speelt is dit een enorm slechte zaak. Testen en vaccineren zijn namelijk belangrijke taken in de strijd tegen corona en de GGD is hierin de belangrijkste partij van Nederland. Mocht het nu echt zo zijn dat burgers geen afspraken bij de GGD maken, omdat ze bang zijn dat hun gegevens niet goed worden beheert, dan heeft dat een negatief effect volksgezondheid (Nouwt, 2021).  Maar ook los van de pandemie zal het afgenomen vertrouwen in de GGD negatief effect hebben op de bereidheid van burgers om met deze instantie te maken te hebben (Curtis et al., 2018).Doordat de GGD een overheidsinstantie is, verslechterd ook de reputatie van de overheid in het geheel op het gebied van digitale kwaliteiten ernstig. Hierdoor kan hetzelfde gebeuren wat eerder is beschreven; burgers willen minder met de (digitale)overheid te  maken hebben (Pérez-Morote et al., 2020). Gaat dit om de overheid als geheel, dan kunnen daardoor serieuze problemen voor de samenleving ontstaan.</p>
+            <button id='knop5' style='margin-top: 15px;' class="btn btn-dark btn-lg">Ga verder</button>
+        </div>
+
+        <div id='screen11' style='display:none;' class="screens">
+            <h1>STELLING!</h1>
+            <p class='stelling'>Ik heb door het datalek minder vetrouwen in de GGD en de overheid op het gebied van gegevensbescherming.</p>
+            <div class='row'>
+                <button id='stelling6.1' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Eens!</button>
+                <button id='stelling6.2' type="button" style='margin: 5px; padding: 5em;' class="btn btn-outline-success btn-lg btn-block col">Oneens!</button>
+            </div>
+        </div>
+
+        <div id='screen12' style='display:none;' class="screens">
+            <h1>Dat was het!</h1>
+            <p>We hebben gekeken naar het GGD datalek. We bekeken de oorzaken, motieven en verantwoordelijkheden. Daarnaast is er gekeken naar mogelijke oplossingen vanuit de wetenschappelijke literatuur en is de impact van het lek bekend. Klik hieronder om terug te gaan naar de homepagina.</p>
+            <button id='knop6' style='margin-top: 15px;' class="btn btn-dark btn-lg">Home</button>
         </div>
     </div>
 </body>
 
 <script>
+    document.getElementById("startknop").addEventListener("click", function (){
+        nextScreen(document.getElementById('home'), document.getElementById('screen1'));
+    });
     document.getElementById("stelling1.1").addEventListener("click", function (){
         nextScreen(document.getElementById('screen1'), document.getElementById('screen2'));
     });
@@ -71,10 +191,65 @@
         nextScreen(document.getElementById('screen1'), document.getElementById('screen2'));
     });
 
-    document.getElementById("knop2").addEventListener("click", function (){
+    document.getElementById("knop1").addEventListener("click", function (){
         nextScreen(document.getElementById('screen2'), document.getElementById('screen3'));
     });
 
+    document.getElementById("stelling2.1").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen3'), document.getElementById('screen4'));
+    });
+    document.getElementById("stelling2.2").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen3'), document.getElementById('screen4'));
+    });
+
+    document.getElementById("knop2").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen4'), document.getElementById('screen5'));
+    });
+    document.getElementById("stelling3.1").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen5'), document.getElementById('screen6'));
+    });
+    document.getElementById("stelling3.2").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen5'), document.getElementById('screen6'));
+    });
+
+    document.getElementById("stelling4.1").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen6'), document.getElementById('screen7'));
+    });
+    document.getElementById("stelling4.2").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen6'), document.getElementById('screen7'));
+    });
+    document.getElementById("stelling4.3").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen6'), document.getElementById('screen7'));
+    });
+    document.getElementById("stelling4.4").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen6'), document.getElementById('screen7'));
+    });
+    document.getElementById("knop3").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen7'), document.getElementById('screen8'));
+    });
+
+    document.getElementById("stelling5.1").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen8'), document.getElementById('screen9'));
+    });
+    document.getElementById("stelling5.2").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen8'), document.getElementById('screen9'));
+    });
+    document.getElementById("knop4").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen9'), document.getElementById('screen10'));
+    });
+    document.getElementById("knop5").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen10'), document.getElementById('screen11'));
+    });
+
+    document.getElementById("stelling6.1").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen11'), document.getElementById('screen12'));
+    });
+    document.getElementById("stelling6.2").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen11'), document.getElementById('screen12'));
+    });
+    document.getElementById("knop6").addEventListener("click", function (){
+        nextScreen(document.getElementById('screen12'), document.getElementById('home'));
+    });
     function nextScreen(scherm1, scherm2) {
         $(scherm1).fadeOut(1000);
         setTimeout(function(){
