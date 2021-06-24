@@ -21,3 +21,10 @@ body {
 .stelling {
     font-size: 30px;
 }
+
+.stellingeind {
+    background-color:#293133;
+    color: white;
+    margin-left: 25%;
+    max-width: 50%;
+}
