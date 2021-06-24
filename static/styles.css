@@ -28,3 +28,12 @@ body {
     margin-left: 25%;
     max-width: 50%;
 }
+
+#tohome {
+    margin: 10px;
+}
+
+#tobronnen {
+    margin: 10px;
+    float: right;
+}

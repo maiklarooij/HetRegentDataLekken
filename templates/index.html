@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <button id='tohome' class="btn btn-dark btn-lg">Terug naar home</button>
+    <button id='tobronnen'class="btn btn-dark btn-lg">Bronnen + makers</button>
+
     <div class="container">
     
         <div id='home' class="screens">
@@ -182,9 +185,9 @@
             </div>
         </div>
 
-        <div id='screen12' style='display:block;' class="screens">
+        <div id='screen12' style='display:none;' class="screens">
             <h1>Dat was het!</h1>
-            <p>We hebben gekeken naar het GGD datalek. We bekeken de oorzaken, motieven en verantwoordelijkheden. Daarnaast is er gekeken naar mogelijke oplossingen vanuit de wetenschappelijke literatuur en is de impact van het lek bekend. Klik hieronder om terug te gaan naar de homepagina.</p>
+            <p>We hebben gekeken naar het GGD datalek. We bekeken de oorzaken, motieven en verantwoordelijkheden. Daarnaast is er gekeken naar mogelijke oplossingen vanuit de wetenschappelijke literatuur en is de impact van het lek bekend. Check hieronder jouw antwoorden op de stellingen. Van gedachten veranderd? Klik hieronder om terug te gaan naar de homepagina, dan kun je de stellingen opnieuw beantwoorden.</p>
             <h2>Jouw antwoorden:</h2>
 
             <h3>Stelling 1: Ik ben wel eens bezorgd over datalekken.</h3>
@@ -206,6 +209,23 @@
             <p class='stellingeind'><span id='answer6'></span></p>
 
             <button id='knop6' style='margin-top: 15px;' class="btn btn-dark btn-lg">Home</button>
+        </div>
+
+        <div id='bronnen' style='display:none;' class='screens'>
+            <h1>Makers</h1>
+            <p>Deze website is gemaakt door groep A4:</p>
+            <p>Laurens van Wijk - 12611972<br>Sem Kjaer - 12374040<br>Thijs Wiegers - 12377724<br>Maik Larooij - 12761915<br>Soufiane Zouli - 12871060<br>Mick van den Boer - 11423870</p>
+
+            <h1>Bronnen</h1>            
+            <p>Alneyadi, S., Sithirasenan, E., & Muthukkumarasamy, V. (2016). A survey on data leakage prevention systems. Journal of Network and Computer Applications, 62, 137-152.</p>
+            <p>Anant, V., Donchak, L., Kaplan, J., & Soller, H. (2021, 22 januari). The consumer-data opportunity and the privacy imperative. McKinsey & Company. https://www.mckinsey.com/business-functions/risk/our-insights/the-consumer-data-opportunity-and-the-privacy-imperative</p>
+            <p>Chawan, P. M., Jadhav, P. (2019). Data Leak Prevention System: A Survey. International Research Journal of Engineering and Technology, 06(10), 197-199.</p>
+            <p>Curtis, S. R., Carre, J. R., & Jones, D. N. (2018). Consumer security behaviors and trust following a data breach. Managerial Auditing Journal, 33(4), 425–435. https://doi.org/10.1108/maj-11-2017-1692</p>
+            <p>Nouwt, S. (2021, 12 februari). Datalek bij de GGD is een les voor ons allemaal. KNMG. https://www.knmg.nl/actualiteit-opinie/columns/column/datalek-bij-de-ggd-is-een-les-voor-ons-allemaal-.htm</p>
+            <p>RTL Nieuws. (2021, 25 januari). Illegale handel in privégegevens miljoenen Nederlanders uit coronasystemen GGD. https://www.rtlnieuws.nl/nieuws/nederland/artikel/5210644/handel-gegevens-nederlanders-ggd-systemen-database-coronit-hpzone</p>
+            <p>RTL Nieuws. (2021). Privacylek coronasystemen was al maanden bekend, GGD deed niets: 'We konden overal bij'. https://www.rtlnieuws.nl/tech/artikel/5211164/ggd-corona-systemen-toegang-vog-coronit-hpzone-light  </p>
+            <p>Pérez-Morote, R., Pontones-Rosa, C., & Núñez-Chicharro, M. (2020). The effects of e-government evaluation, trust and the digital divide in the levels of e-government use in European countries. Technological Forecasting and Social Change, 154, 119973. https://doi.org/10.1016/j.techfore.2020.119973</p>
+            <button id='homefrombronnen' class="btn btn-dark btn-lg">Terug naar home</button>
         </div>
     </div>
 </body>
@@ -353,4 +373,38 @@
     document.getElementById("stelling6.2").addEventListener("click", function (){
         stelling6('Oneens');
     });
+
+    document.getElementById("tohome").addEventListener("click", function (){
+        goHome();
+    });
+
+    document.getElementById("homefrombronnen").addEventListener("click", function (){
+        goHome();
+    });
+
+    function goHome() {
+        for (let i = 1; i < 13; i++) {
+            var screen = 'screen' + i;
+            $(document.getElementById(screen)).fadeOut(1000);
+        }
+        $(document.getElementById('bronnen')).fadeOut(1000);
+        setTimeout(function(){
+            $(document.getElementById('home')).fadeIn(1000);
+        }, 1000);
+    };
+
+    document.getElementById("tobronnen").addEventListener("click", function (){
+        goToBronnen();
+    });
+
+    function goToBronnen() {
+        for (let i = 1; i < 13; i++) {
+            var screen = 'screen' + i;
+            $(document.getElementById(screen)).fadeOut(1000);
+        }
+        $(document.getElementById('home')).fadeOut(1000);
+        setTimeout(function(){
+            $(document.getElementById('bronnen')).fadeIn(1000);
+        }, 1000);
+    };
 </script>
