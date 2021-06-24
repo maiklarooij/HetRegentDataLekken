@@ -1,10 +1,13 @@
 from flask import Flask, render_template, request
 from tempfile import mkdtemp
+from whitenoise import WhiteNoise
+
 
 
 # Configure application
 app = Flask(__name__)
 app.config["SECRET_KEY"] = b'Ko5\xc8\x13w\x8b\x8c\xc8\xa9\xa5\xf0P\x92"\x12'
+app.wsgi_app = WhiteNoise(app.wsgi_app, root='static/')
 
 # Configure session to use filesystem (instead of signed cookies)
 app.config["SESSION_FILE_DIR"] = mkdtemp()
